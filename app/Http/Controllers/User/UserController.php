@@ -60,11 +60,11 @@ class UserController extends Controller
         $user_mobile = "01843215702";
         $showroom= Auth::user()->sales_point_name;
         $sms_text = "You have a notification from packet requisition for $showroom.Please check The panel for details";
-        $user = "Pride";
-        $pass = "xA33I127";
-        $sid = "PrideLtdEng";
+        $user = "userName";
+        $pass = "Password";
+        $sid = "stackHolderId";
         //$sid="PrideLtdBng";
-        $url = "http://sms.sslwireless.com/pushapi/dynamic/server.php";
+        $url = "Url";
         $param = "user=$user&pass=$pass&sms[0][0]=$user_mobile&sms[0][1]=". $sms_text . "&sms[0][2]=1234567890&sid=$sid";
         $crl = curl_init();
         curl_setopt($crl, CURLOPT_SSL_VERIFYPEER, FALSE);
